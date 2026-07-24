@@ -27,6 +27,8 @@ in the future, this project will be updated and improved, and new features will 
 <img width="1919" height="1079" alt="ezgif com-gif-maker" src="https://github.com/user-attachments/assets/e55764a6-2ee3-4785-a56b-b3baf806dd4e" />
 
 ## install
+> after installation, there will be no wallpapers, and you need to select them yourself via win + r and going to the wallpapers menu
+
 unfortunately, there is no automatic dots installer yet :(, I plan to make one in the future.
 but there is no installer yet - you can install it manually if you are not too lazy. below is a short and clear tutorial
 
