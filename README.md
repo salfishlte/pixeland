@@ -55,6 +55,13 @@ after all of this, you need allow some sh scripts
 > chmod +x ~/.config/hypr/scripts/wallpaper-picker.sh
 ```
 
+## to-do
+- switch from dunst to swaync
+- add auto-install
+- switch from bash > fish
+- new rofi
+- add some func for waybar
+  
 ## credits
 - waybar inspiration: https://github.com/yugg755i/dotfiles
 - salfishlte: for creating this <3
