@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALL_DIR="~./Pictures/wallpapers"
+WALL_DIR="~/Pictures/wallpapers"
 
 if [ ! -d "$WALL_DIR" ]; then
     exit 1
