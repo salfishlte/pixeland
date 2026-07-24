@@ -1,4 +1,4 @@
-<img width="2880" height="854" alt="Frame 2" src="https://github.com/user-attachments/assets/0efa7253-b093-436f-9fd1-e0c690cf28be" />
+<img width="2880" height="854" alt="" src="https://github.com/user-attachments/assets/440d1d37-8287-4553-bd70-3a7330c866d8" />
 <hr style="width: 300px; height: 2px; background-color: #f0882d; border: none; margin: 15px 0;">
 
 > [!WARNING]
@@ -27,21 +27,27 @@ in the future, this project will be updated and improved, and new features will 
 <img width="1919" height="1079" alt="ezgif com-gif-maker" src="https://github.com/user-attachments/assets/e55764a6-2ee3-4785-a56b-b3baf806dd4e" />
 
 ## install
-you can install my dots through the installer, or you can just copy the config folders to ~/.config.
-below, there will be a tutorial on how to correctly install through the installer, I will tell you about ego options, etc
+unfortunately, there is no automatic dots installer yet :(, I plan to make one in the future.
+but there is no installer yet - you can install it manually if you are not too lazy. below is a short and clear tutorial
 
-also, dots are adapted (as is their installation) only for archlinux (or arch based distributions)
-keep that in mind!
-
-### clone repo
+### clone repo & install dependencies
 first of all, you need to clone the repository in order to use the installer
+```
 > git clone https://github.com/salfishlte/pixeland.git
 > cd pixeland
+```
+secondly, install all of dependencies for this dots
+```
+> sudo pacman -S awww dunst nautilus gtk4 hyprland hyprlock hypridle kitty matugen rofi waybar ttf-jetbrains-mono-nerd ttf-firacode-nerd ttf-hack-nerd
+```
 
 ### apply configs
 now, you need to run the installer to install dots
-> chmod +x install.sh
-> ./install.sh
+```
+> cp -r dunst gtk-4.0 hypr kitty matugen rofi waybar ~/.config/
+>  mkdir -p ~/Pictures/wallpapers
+> cp -r wallpapers/. ~/Pictures/wallpapers/
+```
 
 ## credits
 - waybar inspiration: https://github.com/yugg755i/dotfiles
