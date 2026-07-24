@@ -45,8 +45,12 @@ secondly, install all of dependencies for this dots
 now, you need to run the installer to install dots
 ```
 > cp -r dunst gtk-4.0 hypr kitty matugen rofi waybar ~/.config/
->  mkdir -p ~/Pictures/wallpapers
-> cp -r wallpapers/. ~/Pictures/wallpapers/
+> mkdir -p ~/Pictures/wallpapers
+> cp -r wallpapers/. ~/Pictures/wallpapers
+```
+after all of this, you need allow some sh scripts
+```
+> chmod +x ~/.config/hypr/scripts/wallpaper-picker.sh
 ```
 
 ## credits
