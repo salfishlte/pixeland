@@ -1,0 +1,114 @@
+@import "colors.rasi"
+
+* {
+    font:             "JetBrains Mono Nerd Font 10";
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+configuration {
+    modi:                   "drun,wall:~/.config/hypr/scripts/wallpaper-picker.sh";
+    display-drun:           "󰀻";
+    display-wall:           "󰸉";
+    sidebar-mode:           true;
+    show-icons:             false;
+    drun-display-format:    "{name}";
+    drun-use-desktop-cache: true;
+    hover-select:           true;
+    me-select-entry:        "";
+    me-accept-entry:        "MousePrimary";
+    sort:                   true;
+}
+
+window {
+    width:            360px;
+    background-color: @background;
+    border:           0px 0px 0px 2px;
+    border-color:     @selected;
+    padding:          0px;
+}
+
+mainbox {
+    background-color: transparent;
+    spacing:          0px;
+    children:         [ inputbar, listview, mode-switcher ];
+}
+
+inputbar {
+    background-color: @background-alt;
+    padding:          10px 14px;
+    children:         [ entry ];
+}
+
+entry {
+    background-color:  transparent;
+    text-color:        @foreground;
+    placeholder:       "search...";
+    placeholder-color: @active;
+}
+
+separator {
+    height:           0px;
+    border:           0px;
+}
+
+listview {
+    background-color: transparent;
+    padding:          4px 0px;
+    lines:            4;
+    columns:          1;
+    spacing:          0px;
+    scrollbar:        false;
+    dynamic:          true;
+    fixed-height:     false;
+    border:           1px 0px 0px 0px;
+    border-color:     @background-alt;
+}
+
+element {
+    background-color: transparent;
+    padding:          8px 14px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+element selected.normal {
+    background-color: @background-alt;
+    text-color:       @selected;
+    border:           0px 0px 0px 2px;
+    border-color:     @selected;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}
+
+mode-switcher {
+    background-color: @background-alt;
+    border:           1px 0px 0px 0px;
+    border-color:     @background;
+}
+
+button {
+    padding:          8px;
+    background-color: transparent;
+    text-color:       @active;
+    vertical-align:   0.5;
+    horizontal-align: 0.5;
+    font:             "JetBrains Mono Nerd Font 14";
+}
+
+button selected {
+    background-color: @background;
+    text-color:       @selected;
+}

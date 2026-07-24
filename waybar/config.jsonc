@@ -1,0 +1,78 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 0,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/language", "mpris"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "tray", "custom/kaomoji"],
+
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "persistent-workspaces": { "1": [], "2": [], "3": [], "4": [], "5": [] }
+    },
+
+    "hyprland/language": {
+        "format": "lang {}",
+        "format-en": "en",
+        "format-ru": "ru"
+    },
+
+    "mpris": {
+        "format": "♪  {title}",
+        "max-length": 40,
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%H:%M  %A, %b %d}",
+        "tooltip": true,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "weeks-pos": "",
+            "on-scroll": 1,
+            "format": {
+                "months":   "<span color='#C4A86A'><b>{}</b></span>",
+                "days":     "<span color='#E6DCC5'>{}</span>",
+                "weekdays": "<span color='#8C805A'><b>{}</b></span>",
+                "today":    "<span color='#C4A86A'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "pulseaudio": {
+        "format": "vol {volume}%",
+        "format-muted": "vol --",
+        "on-click": "pavucontrol"
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "interval": 2,
+        "states": { "warning": 70, "critical": 90 }
+    },
+
+    "memory": {
+        "format": "ram {percentage}%",
+        "interval": 3
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 6,
+        "show-passive-items": true
+    },
+
+    "custom/kaomoji": {
+        "exec": "echo '(¬_¬)'",
+        "format": "{}",
+        "interval": "once",
+        "tooltip": false
+    }
+}

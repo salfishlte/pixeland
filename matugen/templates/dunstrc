@@ -1,0 +1,39 @@
+[global]
+    monitor = 0
+    follow = none
+    width = 300
+    origin = top-right
+    offset = (8, 11)
+    scale = 1
+    corner_radius = 0
+    frame_width = 1
+    frame_color = "{{colors.outline.default.hex}}"
+    background = "{{colors.surface.default.hex}}"
+    foreground = "{{colors.on_surface.default.hex}}"
+    font = JetBrainsMono Nerd Font 10
+    format = "<span foreground='{{colors.primary.default.hex}}' font_desc='JetBrainsMono Nerd Font Bold 10'>%s</span>\n<span foreground='{{colors.on_surface.default.hex}}'>%b</span>"
+    alignment = left
+    vertical_alignment = center
+    word_wrap = yes
+    padding = 12
+    horizontal_padding = 15
+    text_icon_padding = 0
+    icon_position = off
+    separator_height = 1
+    separator_color = "{{colors.outline.default.hex}}"
+    show_indicators = no
+    indicate_hidden = no
+
+[urgency_low]
+    frame_color = "{{colors.outline.default.hex}}"
+    timeout = 5
+
+[urgency_normal]
+    frame_color = "{{colors.outline.default.hex}}"
+    timeout = 5
+
+[urgency_critical]
+    frame_color = "{{colors.error.default.hex}}"
+    background = "{{colors.surface.default.hex}}"
+    foreground = "{{colors.on_surface.default.hex}}"
+    timeout = 0

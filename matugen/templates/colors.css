@@ -1,0 +1,11 @@
+@define-color base_bg {{colors.background.default.hex}};
+@define-color base_fg {{colors.on_background.default.hex}};
+@define-color borders {{colors.outline_variant.default.hex}};
+@define-color muted {{colors.surface_variant.default.hex}};
+@define-color accent {{colors.primary.default.hex}};
+@define-color urgent {{colors.error.default.hex}};
+@define-color success {{colors.tertiary.default.hex}};
+@define-color warning {{colors.secondary.default.hex}};
+@define-color tooltip_bg {{colors.surface_variant.default.hex}};
+@define-color hover_accent {{colors.primary.default.rgba | set_alpha: 0.07}};
+@define-color hover_urgent {{colors.error.default.rgba | set_alpha: 0.15}};

@@ -1,0 +1,59 @@
+[config]
+reload_apps = false
+
+[templates.rofi]
+input_path  = '~/.config/matugen/templates/colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+
+[templates.dunst]
+input_path  = '~/.config/matugen/templates/dunstrc'
+output_path = '~/.config/dunst/dunstrc'
+post_hook   = 'dunstctl reload'
+
+[templates.kitty]
+input_path  = '~/.config/matugen/templates/colors.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook   = 'kill -SIGUSR1 $(pgrep kitty)'
+
+[templates.waybar]
+input_path  = '~/.config/matugen/templates/colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook   = 'pkill -SIGUSR2 waybar'
+
+[templates.gtk4]
+input_path  = '~/.config/matugen/templates/gtkcolors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.hyprlock]
+input_path  = '~/.config/matugen/templates/hyprlock-colors.conf'
+output_path = '~/.config/hypr/hyprlock-colors.conf'
+
+[templates.papirus-folders]
+input_path = '~/.config/matugen/templates/papirus'
+compare_to = '{{colors.primary.default.hex}}'
+post_hook = 'papirus-folders -C {{closest_color}} -o && nautilus -q'
+
+colors_to_compare = [
+  { name = "black", color = "#4f4f4f" },
+  { name = "blue", color = "#5294e2" },
+  { name = "bluegrey", color = "#607d8b" },
+  { name = "brown", color = "#ae8e6c" },
+  { name = "carmine", color = "#a30002" },
+  { name = "cyan", color = "#00bcd4" },
+  { name = "darkcyan", color = "#45abb7" },
+  { name = "deeporange", color = "#eb6637" },
+  { name = "green", color = "#87b158" },
+  { name = "grey", color = "#8e8e8e" },
+  { name = "indigo", color = "#5c6bc0" },
+  { name = "magenta", color = "#ca71df" },
+  { name = "nordic", color = "#81a1c1" },
+  { name = "orange", color = "#ee923a" },
+  { name = "palebrown", color = "#d1bfae" },
+  { name = "paleorange", color = "#eeca8f" },
+  { name = "pink", color = "#f06292" },
+  { name = "red", color = "#e25252" },
+  { name = "teal", color = "#16a085" },
+  { name = "violet", color = "#7e57c2" },
+  { name = "white", color = "#e4e4e4" },
+  { name = "yaru", color = "#676767" },
+]

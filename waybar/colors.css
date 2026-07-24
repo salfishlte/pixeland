@@ -1,0 +1,11 @@
+@define-color base_bg #19120c;
+@define-color base_fg #efe0d5;
+@define-color borders #51453a;
+@define-color muted #51453a;
+@define-color accent #fdb975;
+@define-color urgent #ffb4ab;
+@define-color success #c0cc9a;
+@define-color warning #e1c1a4;
+@define-color tooltip_bg #51453a;
+@define-color hover_accent rgba(253, 185, 117, 0.07);
+@define-color hover_urgent rgba(255, 180, 171, 0.15);

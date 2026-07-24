@@ -1,0 +1,34 @@
+@import "colors.css";
+
+.nautilus-window .sidebar-pane,
+.nautilus-window:backdrop .sidebar-pane,
+.nautilus-window placessidebar,
+.nautilus-window:backdrop placessidebar,
+.nautilus-window placessidebar > scrolledwindow,
+.nautilus-window:backdrop placessidebar > scrolledwindow,
+.nautilus-window placessidebar viewport,
+.nautilus-window:backdrop placessidebar viewport,
+.nautilus-window placessidebar list,
+.nautilus-window:backdrop placessidebar list {
+    background-color: @window_bg_color;
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    transition: none;
+}
+
+.nautilus-window placessidebar list row,
+.nautilus-window:backdrop placessidebar list row {
+    background-color: transparent;
+    transition: none;
+}
+
+.nautilus-window placessidebar list row:hover {
+    background-color: @card_bg_color;
+}
+
+.nautilus-window placessidebar list row:selected,
+.nautilus-window:backdrop placessidebar list row:selected {
+    background-color: @accent_color;
+    color: @window_bg_color;
+}

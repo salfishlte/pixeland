@@ -1,0 +1,137 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrains Mono", "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+window#waybar {
+    background-color: alpha(@base_bg, 0.9);
+    color: @base_fg;
+    border-bottom: 1px solid @borders;
+}
+
+#workspaces,
+#mpris,
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#custom-kaomoji,
+#hyprland-language {
+    padding: 0 11px;
+    color: @base_fg;
+    background: transparent;
+}
+
+#workspaces button {
+    padding: 0 7px;
+    color: @muted;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    transition: all 0.15s ease;
+}
+
+#workspaces button.active {
+    color: @base_fg;
+    border-bottom: 2px solid @accent;
+}
+
+#workspaces button.urgent {
+    color: @urgent;
+}
+
+#hyprland-language {
+    color: @accent;
+}
+
+#mpris {
+    color: @success;
+}
+
+#clock {
+    color: @base_fg;
+}
+
+#pulseaudio {
+    border-left: 1px solid @borders;
+    color: @base_fg;
+}
+
+#pulseaudio.muted {
+    color: @muted;
+}
+
+#cpu {
+    color: @base_fg;
+}
+
+#cpu.warning {
+    color: @warning;
+}
+
+#cpu.critical {
+    color: @urgent;
+}
+
+#memory {
+    color: @base_fg;
+}
+
+#custom-kaomoji {
+    color: @muted;
+    padding: 0 10px;
+    border-left: 1px solid @borders;
+    font-size: 12px;
+    transition: color 0.15s, background 0.15s;
+    margin-left: 10px;
+}
+
+#custom-kaomoji:hover {
+    color: @accent;
+    background: @hover_accent;
+}
+
+#tray {
+    padding: 0 8px;
+    border-left: 1px solid @borders;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @hover_urgent;
+}
+
+tooltip {
+    background: @tooltip_bg;
+    border: 1px solid @borders;
+    color: @base_fg;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+#wlr\/taskbar {
+    margin-left: 10px;
+    padding: 0 5px;
+}
+
+#wlr\/taskbar button {
+    padding: 0 5px;
+    background: transparent;
+}
+
+#wlr\/taskbar button.active {
+    border-bottom: 2px solid @accent;
+}
