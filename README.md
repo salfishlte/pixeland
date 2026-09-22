@@ -1,10 +1,8 @@
-<img width="2880" height="854" alt="" src="https://github.com/user-attachments/assets/440d1d37-8287-4553-bd70-3a7330c866d8" />
+<img width="2880" height="854" alt="dots" src="https://github.com/user-attachments/assets/ed01279a-5469-4f92-be62-4a5b73831a5a" />
 <hr style="width: 300px; height: 2px; background-color: #f0882d; border: none; margin: 15px 0;">
 
-> [!WARNING]
 > dots data may be unstable for your build. if you have any errors, problems, or instability with dots, please report them in the issues. thank you!
 
-<hr style="width: 300px; height: 2px; background-color: #f0882d; border: none; margin: 15px 0;">
 
 ## pixeland
 pixeland - this is a small project created for **myself and for others.** these hyprland dots are reminiscent of pixel art, or something along those lines.
@@ -24,7 +22,7 @@ in the future, this project will be updated and improved, and new features will 
 -->
 
 ## screenshots
-<img width="1919" height="1079" alt="ezgif com-gif-maker" src="https://github.com/user-attachments/assets/e55764a6-2ee3-4785-a56b-b3baf806dd4e" />
+<img width="1920" height="1080" alt="gif" src="https://github.com/user-attachments/assets/56d7aeab-2e0b-4dd8-9be0-0fe179275d07" />
 
 ## install
 > after installation, there will be no wallpapers, and you need to select them yourself via win + r and going to the wallpapers menu
@@ -54,13 +52,6 @@ after all of this, you need allow some sh scripts
 ```
 > chmod +x ~/.config/hypr/scripts/wallpaper-picker.sh
 ```
-
-## to-do
-- switch from dunst to swaync
-- add auto-install
-- switch from bash > fish
-- new rofi
-- add some func for waybar
   
 ## credits
 - waybar inspiration: https://github.com/yugg755i/dotfiles
