@@ -2,7 +2,7 @@
     monitor = 0
     follow = none
     width = 300
-    origin = top-right
+    origin = top-center
     offset = (8, 11)
     scale = 1
     corner_radius = 0

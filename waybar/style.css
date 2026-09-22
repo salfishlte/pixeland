@@ -13,56 +13,54 @@
 }
 
 window#waybar {
-    background-color: alpha(@base_bg, 0.9);
+    background-color: @base_bg;
     color: @base_fg;
     border-bottom: 1px solid @borders;
 }
 
 #workspaces,
 #mpris,
-#clock,
+#custom-clock,
 #pulseaudio,
 #cpu,
 #memory,
-#custom-kaomoji,
-#hyprland-language {
-    padding: 0 11px;
-    color: @base_fg;
-    background: transparent;
-}
-
-#workspaces button {
+#custom-kaomoji {
     padding: 0 7px;
     color: @muted;
     background: transparent;
-    border-bottom: 2px solid transparent;
+    transition: all 0.15s ease;
+}
+
+#workspaces button {
+    padding: 0 7px 0 7px;
+    color: @muted;
+    background: transparent;
+    border-bottom: 3px solid transparent;
     transition: all 0.15s ease;
 }
 
 #workspaces button.active {
     color: @base_fg;
-    border-bottom: 2px solid @accent;
+    border-bottom: 3px solid @accent;
 }
 
 #workspaces button.urgent {
     color: @urgent;
 }
 
-#hyprland-language {
-    color: @accent;
-}
-
 #mpris {
     color: @success;
 }
 
-#clock {
+#custom-clock {
     color: @base_fg;
 }
 
 #pulseaudio {
     border-left: 1px solid @borders;
+    padding: 0 10px;
     color: @base_fg;
+    font-family: "JetBrainsMono Nerd Font";
 }
 
 #pulseaudio.muted {
@@ -70,6 +68,8 @@ window#waybar {
 }
 
 #cpu {
+    border-left: 1px solid @borders;
+    padding: 0 10px;
     color: @base_fg;
 }
 
@@ -82,6 +82,8 @@ window#waybar {
 }
 
 #memory {
+    border-left: 1px solid @borders;
+    padding: 0 10px;
     color: @base_fg;
 }
 

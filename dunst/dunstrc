@@ -2,16 +2,16 @@
     monitor = 0
     follow = none
     width = 300
-    origin = top-right
+    origin = top-center
     offset = (8, 11)
     scale = 1
     corner_radius = 0
     frame_width = 1
-    frame_color = "#9e8e81"
-    background = "#19120c"
-    foreground = "#efe0d5"
+    frame_color = "#919191"
+    background = "#131313"
+    foreground = "#e2e2e2"
     font = JetBrainsMono Nerd Font 10
-    format = "<span foreground='#fdb975' font_desc='JetBrainsMono Nerd Font Bold 10'>%s</span>\n<span foreground='#efe0d5'>%b</span>"
+    format = "<span foreground='#ffffff' font_desc='JetBrainsMono Nerd Font Bold 10'>%s</span>\n<span foreground='#e2e2e2'>%b</span>"
     alignment = left
     vertical_alignment = center
     word_wrap = yes
@@ -20,20 +20,20 @@
     text_icon_padding = 0
     icon_position = off
     separator_height = 1
-    separator_color = "#9e8e81"
+    separator_color = "#919191"
     show_indicators = no
     indicate_hidden = no
 
 [urgency_low]
-    frame_color = "#9e8e81"
+    frame_color = "#919191"
     timeout = 5
 
 [urgency_normal]
-    frame_color = "#9e8e81"
+    frame_color = "#919191"
     timeout = 5
 
 [urgency_critical]
     frame_color = "#ffb4ab"
-    background = "#19120c"
-    foreground = "#efe0d5"
+    background = "#131313"
+    foreground = "#e2e2e2"
     timeout = 0
