@@ -4,19 +4,13 @@
     "height": 30,
     "spacing": 0,
 
-    "modules-left": ["hyprland/workspaces", "hyprland/language", "mpris"],
-    "modules-center": ["clock"],
+    "modules-left": ["hyprland/workspaces", "mpris"],
+    "modules-center": ["custom/clock"],
     "modules-right": ["pulseaudio", "cpu", "memory", "tray", "custom/kaomoji"],
 
     "hyprland/workspaces": {
         "format": "{id}",
         "persistent-workspaces": { "1": [], "2": [], "3": [], "4": [], "5": [] }
-    },
-
-    "hyprland/language": {
-        "format": "lang {}",
-        "format-en": "en",
-        "format-ru": "ru"
     },
 
     "mpris": {
@@ -25,31 +19,19 @@
         "tooltip": false
     },
 
-    "clock": {
-        "format": "{:%H:%M  %A, %b %d}",
-        "tooltip": true,
-        "tooltip-format": "<tt><small>{calendar}</small></tt>",
-        "calendar": {
-            "mode": "month",
-            "weeks-pos": "",
-            "on-scroll": 1,
-            "format": {
-                "months":   "<span color='#C4A86A'><b>{}</b></span>",
-                "days":     "<span color='#E6DCC5'>{}</span>",
-                "weekdays": "<span color='#8C805A'><b>{}</b></span>",
-                "today":    "<span color='#C4A86A'><b><u>{}</u></b></span>"
-            }
-        },
-        "actions": {
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
+    "custom/clock": {
+        "exec": "[ -f /tmp/waybar_clock_alt ] && date '+%Y-%m-%d' || date '+%H:%M %A, %b %d' | tr '[:upper:]' '[:lower:]'",
+        "on-click": "[ -f /tmp/waybar_clock_alt ] && rm /tmp/waybar_clock_alt || touch /tmp/waybar_clock_alt",
+        "interval": 1,
+        "tooltip-format": "<big>{:%Y %B}</big>"
     },
-
+    
     "pulseaudio": {
         "format": "vol {volume}%",
-        "format-muted": "vol --",
-        "on-click": "pavucontrol"
+        "format-bluetooth": "vol {volume}%",
+        "format-muted": "--",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "scroll-step": 1
     },
 
     "cpu": {
